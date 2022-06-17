@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8279cce1-26c8-4d67-9a2d-28147562c728" name="Changes" comment="Creamos proyecto y agregamos las credentials.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/java/DriveQuickstart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/DriveQuickstart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +28,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -58,6 +66,27 @@
       <recent name="C:\Users\adria\IdeaProjects\BotDiscord\src\src\main\resources" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="BotDiscord" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +97,7 @@
       <updated>1655445808339</updated>
       <workItem from="1655445812307" duration="2856000" />
       <workItem from="1655448950044" duration="897000" />
-      <workItem from="1655450259289" duration="32000" />
+      <workItem from="1655450259289" duration="3945000" />
     </task>
     <task id="LOCAL-00001" summary="Creamos proyecto y agregamos las credentials.json">
       <created>1655450126834</created>
