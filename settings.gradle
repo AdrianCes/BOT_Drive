@@ -1,0 +1,9 @@
+rootProject.name = 'BotDiscord'
+include 'java'
+include 'src'
+include 'src:main'
+findProject(':src:main')?.name = 'main'
+include 'src:main:resources'
+findProject(':src:main:resources')?.name = 'resources'
+include 'src'
+
