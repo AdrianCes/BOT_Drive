@@ -140,7 +140,7 @@ public class DriveQuickstart {
             final String token = "NzYyOTk1OTAyNTQ1Mzk1NzIz.GZuKID.weobQYpefHCcRKN4dbs5_-boGglzCBQy_qUtUA";
             final DiscordClient client = DiscordClient.create(token);
             final GatewayDiscordClient gateway = client.login().block();
-
+            //Creamos el mensaje embed
             EmbedCreateSpec embed = EmbedCreateSpec.builder()
                     .title("Itachi")
                     .image("attachment://avatar.jpg")
@@ -165,7 +165,7 @@ public class DriveQuickstart {
                     channel.createMessage(builder.build()).block();
 
                 }
-
+                // Hacemos la tarea del pdf con un sencillo if y un try catch por sino lo encuentra
                 if ("!pdf".equals(message.getContent())) {
                     final MessageChannel channel = message.getChannel().block();
 
