@@ -137,6 +137,54 @@ public class DriveQuickstart {
                 }
 
         }
+            final String token = "NzYyOTk1OTAyNTQ1Mzk1NzIz.GZuKID.weobQYpefHCcRKN4dbs5_-boGglzCBQy_qUtUA";
+            final DiscordClient client = DiscordClient.create(token);
+            final GatewayDiscordClient gateway = client.login().block();
+
+            EmbedCreateSpec embed = EmbedCreateSpec.builder()
+                    .title("Itachi")
+                    .image("attachment://avatar.jpg")
+                    .build();
+
+            gateway.on(MessageCreateEvent.class).subscribe(event -> {
+                final Message message = event.getMessage();
+
+                if ("!embed".equals(message.getContent())) {
+                    String IMAGE_URL = "https://imgur.com/t/archlinux/SA1ujSJ";
+                    String ANY_URL = "https://www.youtube.com/watch?v=ioiyyGBJ5Qo;
+                    final MessageChannel channel = message.getChannel().block();
+                    EmbedCreateSpec.Builder builder = EmbedCreateSpec.builder();
+                    builder.author("Adrian", ANY_URL, IMAGE_URL);
+                    builder.image(IMAGE_URL);
+                    builder.title("Embed");
+                    builder.url(ANY_URL);
+                    builder.description("Trabajo cod");
+                    builder.thumbnail(IMAGE_URL);
+                    builder.footer("Itachi", IMAGE_URL);
+                    builder.timestamp(Instant.now());
+                    channel.createMessage(builder.build()).block();
+
+                }
+
+                if ("!pdf".equals(message.getContent())) {
+                    final MessageChannel channel = message.getChannel().block();
+
+                    InputStream fileAsInputStream = null;
+                    try {
+                        fileAsInputStream = new FileInputStream("/Users/laura/proyectosCOD/Api/src/main/java/PDF/prueba.pdf");
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    }
+
+                    channel.createMessage(MessageCreateSpec.builder()
+                            .content("pdf")
+                            .addFile("/Users/adria/IdeaProjects/BotDiscord/src/pdf/a.pdf", fileAsInputStream)
+                            .addEmbed(embed)
+                            .build()).subscribe();
+                }
+            });
+
+            gateway.onDisconnect().block()
     }
 }
 // [END drive_quickstart]
